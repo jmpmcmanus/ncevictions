@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Evictions in North Carolina</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Evictions in North Carolina, by County</h1>
+    <center>
+      <div id="slider-container">
+        <button id="play-button">Play</button>
+      </div>
+    </center>
+    <form id="evictform">
+      <label><select id="field"></select></label>
+      <span id="status"></span>
+    </form>
+    <center>
+      <div class="map-container"></div>
+      Click to toggle between <b>North Carolina</b> and <b>Durham County</b> 
+      data: <button id="zoom-button">Change Scale</button>
+    </center>
+    <p id="source">Source: <a href="https://evictionlab.org/">Eviction Lab</a></p>
+  </div>
+  <script src="js/d3.v4.min.js"></script>
+  <script src="js/topojson.v1.min.js"></script>
+  <script src="js/d3-tip.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
